@@ -66,14 +66,18 @@ function moveForward() {
     }
     if (avatarCoordinates[0] < 0) {
         avatarCoordinates[0] = 0
+        direction = 'down'
     } else if (avatarCoordinates[1] < 0) {
         avatarCoordinates[1] = 0
+        direction = 'right'
     }
 
     if (avatarCoordinates[0] > 9) {
         avatarCoordinates[0] = 9
+        direction = 'up'
     } else if (avatarCoordinates[1] > 9) {
         avatarCoordinates[1] = 9
+        direction = 'left'
     }
 
     createBoard()
