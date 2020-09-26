@@ -70,5 +70,11 @@ function moveForward() {
         avatarCoordinates[1] = 0
     }
 
+    if (avatarCoordinates[0] > 9) {
+        avatarCoordinates[0] = 9
+    } else if (avatarCoordinates[1] > 9) {
+        avatarCoordinates[1] = 9
+    }
+
     createBoard()
 }
